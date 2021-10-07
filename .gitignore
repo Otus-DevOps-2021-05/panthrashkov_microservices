@@ -1,4 +1,4 @@
 .env
-/kubernetes/terraform/stage/terraform.tfstate
-/kubernetes/terraform/stage/terraform.tfstate.backup
-/kubernetes/terraform/stage/terraform.tfvars
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfvars

@@ -40,7 +40,7 @@ resource "yandex_kubernetes_cluster" "k8s-stage" {
 }
 
 resource "yandex_kubernetes_node_group" "k8s-node" {
-  cluster_id = yandex_kubernetes_cluster.k8s-cluster.id
+  cluster_id = yandex_kubernetes_cluster.k8s-stage.id
   version    = "1.19"
   name = "k8s-node"
 
