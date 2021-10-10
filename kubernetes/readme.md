@@ -1,5 +1,5 @@
 1. Получить иинформацию о кластере в облаке и записать ее в ~/.kube/config
-yc managed-kubernetes cluster get-credentials <cluster-name> --external
+yc managed-kubernetes cluster get-credentials k8s-stage --external
 2. Проверить что информация записалась
 kubectl config current-context
 3. Создать dev namespace
