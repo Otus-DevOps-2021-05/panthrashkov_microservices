@@ -1,9 +1,0 @@
----
-- name: Copy docker-compose.yml
-  hosts: all
-  become: true
-  tasks:
-    - name: example copying file with owner and permissions
-      copy:
-        src: ../docker-compose.yml
-        dest: /srv/gitlab/docker-compose.yml

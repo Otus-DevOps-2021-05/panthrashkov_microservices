@@ -41,12 +41,19 @@
       tags:
         - docker
 
-    - name: Install docker-compose
-      remote_user: ubuntu
+    - name: Download docker-compose 1.25.1-rc1
       get_url:
         url : https://github.com/docker/compose/releases/download/1.25.1-rc1/docker-compose-Linux-x86_64
-        dest: /usr/local/bin/docker-compose
-        mode: '0755'
+        dest: ~/docker-compose
+        mode: '+x'
+
+    - name: Check docker-compose exists
+      stat: path=~/docker-compose
+      register: docker_compose
+
+    - name: Move docker-compose to /usr/local/bin/docker-compose
+      command: mv ~/docker-compose /usr/local/bin/docker-compose
+      when: docker_compose.stat.exists
 
     - name: Create a directory if it does not exist
       file:
@@ -61,9 +68,6 @@
         dest: /srv/gitlab/docker-compose.yml
 
     - name: Install gitlab
-      remote_user: ubuntu
-      docker_compose:
-        project_src: /srv/gitlab
-        files:
-          - "docker_compose.yml"
-        state: present
+      shell:
+        cmd: 'docker-compose up -d'
+        chdir: /srv/gitlab
