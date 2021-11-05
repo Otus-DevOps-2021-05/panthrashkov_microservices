@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2087335c-016a-4179-894e-7adfed03c487" name="Changes" comment="homework kubernetes:  CI/CD в Kubernetes">
-      <change afterPath="$PROJECT_DIR$/gitlab-ci/img/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gitlab-ci/img/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gitlab-ci/img/img_5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/ansible/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/ansible/gitlab.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/ansible/gitlab.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gitlab-ci/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/readme.md" afterDir="false" />
     </list>
     <list id="14f3bb92-c681-4bfc-a0ac-6a070acc66cc" name="local" comment="" />
@@ -58,11 +59,11 @@
       <recent name="$PROJECT_DIR$/kubernetes/helm/Charts/ui/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gitlab-ci" />
       <recent name="$PROJECT_DIR$/kubernetes/helm/Charts/ui" />
       <recent name="$PROJECT_DIR$/kubernetes/helm/Charts/tls" />
       <recent name="$PROJECT_DIR$/kubernetes/reddit" />
       <recent name="$PROJECT_DIR$/kubernetes/helm/Charts" />
-      <recent name="$PROJECT_DIR$/kubernetes/helm/Charts/temp" />
     </key>
   </component>
   <component name="RunManager">
@@ -112,7 +113,7 @@
       <workItem from="1634999256735" duration="6469000" />
       <workItem from="1635276847435" duration="597000" />
       <workItem from="1636038147900" duration="8362000" />
-      <workItem from="1636102741995" duration="12245000" />
+      <workItem from="1636102741995" duration="12876000" />
     </task>
     <task id="LOCAL-00001" summary="homework ДЗ_Docker_образы._Микросервисы">
       <created>1628962278860</created>

@@ -5,5 +5,5 @@
   tasks:
     - name: example copying file with owner and permissions
       copy:
-        src: docker-compose.yml
+        src: ../docker-compose.yml
         dest: /srv/gitlab/docker-compose.yml

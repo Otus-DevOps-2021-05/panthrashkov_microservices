@@ -29,6 +29,7 @@ ansible-playbook gitlab.yml -l gitlab-ci -u ubuntu
 ```bash
 ansible gitlab-ci -m shell -a 'cd /srv/gitlab/ \ docker-compose up -d' -b
 ``` 
+![img.png](img/img.png)
 7. get gitlab root password
 sudo docker exec -it 042c541924a9 grep 'Password:' /etc/gitlab/initial_root_password
  
@@ -47,7 +48,7 @@ git push gitlab gitlab-ci-1
 ```
 
 11. Get token for runner
-
+    ![img.png](img/img_2.png)
 12. Start runner
 ```bash
 sudo docker run -d --name gitlab-runner --restart always -v /srv/gitlab-runner/config:/etc/gitlab-runner -v \
@@ -76,5 +77,9 @@ sudo docker exec -it gitlab-runner gitlab-runner register \
     ```
     
 15. Some modification to gitlab-ci.yml, simpletest.rb, Gemfile - to run  test. push
-
-16. Work with environments 
+    ![img.png](img/img_3.png)
+16. Work with environments
+    ![img.png](img/img_4.png)
+17. Add manual run
+    ![img.png](img/img_5.png)
+18. Add dynamic environments
