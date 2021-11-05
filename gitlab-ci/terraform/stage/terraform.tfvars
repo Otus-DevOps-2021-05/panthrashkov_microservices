@@ -1,0 +1,7 @@
+cloud_id = "b1go50poefqsqu09qeet"
+folder_id = "b1gt52r3eo9fj66iu48k"
+zone = "ru-central1-a"
+public_key_path = "~/.ssh/appuser.pub"
+private_key_path = "~/.ssh/appuser"
+service_account_key_file = "/home/alex/infra-secret/keyKubernetes.json"
+service_account_id = "ajeg608kkgaihst2v125"
