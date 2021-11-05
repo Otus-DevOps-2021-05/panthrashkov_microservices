@@ -1,21 +1,21 @@
 1. Create virtual machine
-```bash 
+```bash
 cd terraform/stage
    terraform init
    terraform plan 
-   terraform apply
+   terraform apply --auto-approve
 ```  
 2 copy ip from output
 and paste to ansible inventory
 
 2. install docker
-```bash 
+```bash
 cd ../../ansible
 ansible-playbook playbook.yml -l gitlab-ci -u ubuntu
 ```   
 3. connect to vm
-```bash 
-ssh ubuntu@84.201.135.248
+```bash
+ssh ubuntu@51.250.0.71
 ``` 
 4. create directories connect to vm
 ```bash

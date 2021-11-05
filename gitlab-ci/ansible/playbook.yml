@@ -46,5 +46,24 @@
       get_url:
         url : https://github.com/docker/compose/releases/download/1.25.1-rc1/docker-compose-Linux-x86_64
         dest: /usr/local/bin/docker-compose
-        mode: 'u+x,g+x'
+        mode: '0755'
 
+    - name: Create a directory if it does not exist
+      file:
+        path: /srv/gitlab
+        state: directory
+        mode: '0755'
+
+    - name: copy docker-compose to host
+      remote_user: ubuntu
+      copy:
+        src: ../docker-compose.yml
+        dest: /srv/gitlab/docker-compose.yml
+
+    - name: Install gitlab
+      remote_user: ubuntu
+      docker_compose:
+        project_src: /srv/gitlab
+        files:
+          - "docker_compose.yml"
+        state: present

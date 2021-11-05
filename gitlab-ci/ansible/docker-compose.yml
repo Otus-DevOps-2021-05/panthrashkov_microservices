@@ -1,0 +1,14 @@
+- name: Run with inline v2 compose
+  hosts: all
+  become: true
+  gather_facts: no
+  tasks:
+    - docker_compose:
+        project_src: /srv/gitlab
+        files:
+          - "docker_compose.yml"
+        state: present
+
+    - debug:
+        var: output
+
