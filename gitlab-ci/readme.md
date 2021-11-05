@@ -75,4 +75,6 @@ sudo docker exec -it gitlab-runner gitlab-runner register \
     git push gitlab gitlab-ci-1
     ```
     
-15. Some modification to gitlab-ci.yml, simpletest.rb, Gemfile - to run  test
+15. Some modification to gitlab-ci.yml, simpletest.rb, Gemfile - to run  test. push
+
+16. Work with environments 
