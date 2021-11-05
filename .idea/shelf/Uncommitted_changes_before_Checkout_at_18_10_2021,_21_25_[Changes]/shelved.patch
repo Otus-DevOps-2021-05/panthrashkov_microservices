@@ -1,0 +1,57 @@
+Index: kubernetes/helm/Charts/ui/templates/ingress.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>apiVersion: networking.k8s.io/v1\nkind: Ingress\nmetadata:\n  name: {{ template \"ui.fullname\" . }}\n  annotations:\n    ingress.alb.yc.io/external-ipv4-address: \"auto\"\nspec:\n  rules:\n  - http:\n      paths:\n      - path: /*\n        pathType: Prefix\n        backend:\n          service:\n            name: {{ template \"ui.fullname\" . }}\n            port:\n              number: {{ .Values.service.externalPort }}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/kubernetes/helm/Charts/ui/templates/ingress.yaml b/kubernetes/helm/Charts/ui/templates/ingress.yaml
+--- a/kubernetes/helm/Charts/ui/templates/ingress.yaml	(revision abfd96742ce7d10f249c6bdbaa46be643628eb81)
++++ b/kubernetes/helm/Charts/ui/templates/ingress.yaml	(date 1633898547179)
+@@ -3,7 +3,7 @@
+ metadata:
+   name: {{ template "ui.fullname" . }}
+   annotations:
+-    ingress.alb.yc.io/external-ipv4-address: "auto"
++    kubernetes.io/ingress.allow-http: "true"
+ spec:
+   rules:
+   - http:
+Index: kubernetes/helm/readme.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>install\nhelm install --set name=test-ui-1 ui ./ui\n\ncheck\nhelm ls\n\noutput\nNAME\tNAMESPACE\tREVISION\tUPDATED                               \tSTATUS  \tCHART   \tAPP VERSION\nui  \tdefault  \t1       \t2021-10-08 22:31:40.53375941 +0300 MSK\tdeployed\tui-1.0.0\t1\n\ntemplating file and add values.yaml\n\ninstall new version of ui (test-ui-3)\nhelm install test-ui-3 ./ui\n\nget ingress list\nkubectl get ingress\ntest-ui-2-ui   <none>   *                 80      3m54s\ntest-ui-3-ui   <none>   *                 80      3m17s\n\nhelm repo add mongodb https://mongodb.github.io/helm-charts\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/kubernetes/helm/readme.md b/kubernetes/helm/readme.md
+--- a/kubernetes/helm/readme.md	(revision abfd96742ce7d10f249c6bdbaa46be643628eb81)
++++ b/kubernetes/helm/readme.md	(date 1633895182651)
+@@ -19,3 +19,27 @@
+ test-ui-3-ui   <none>   *                 80      3m17s
+ 
+ helm repo add mongodb https://mongodb.github.io/helm-charts
++
++
++prepare for ingress
++kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.34.1/deploy/static/provider/cloud/deploy.yaml
++create namespace
++kubectl apply -f dev-namespace.yml
++create ingress
++kubectl apply -f ui-ingress.yml -n dev
++get ingress
++kubectl get ingress -n dev
++NAME   CLASS    HOSTS   ADDRESS         PORTS     AGE
++ui     <none>   *       62.84.112.104   80, 443   75s
++
++create certificate
++openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=62.84.112.104"
++load certificate
++kubectl create secret tls ui-ingress --key tls.key --cert tls.crt -n dev
++
++update ingress
++kubectl delete ingress ui -n dev
++kubectl apply -f ui-ingress.yml -n dev
++
++
++

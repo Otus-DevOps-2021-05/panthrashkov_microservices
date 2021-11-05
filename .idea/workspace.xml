@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2087335c-016a-4179-894e-7adfed03c487" name="Changes" comment="homework kubernetes:  CI/CD в Kubernetes">
+      <change afterPath="$PROJECT_DIR$/reddit/simpletest.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/ansible/ansible.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/ansible/ansible.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/ansible/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/ansible/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/ansible/gitlab.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/ansible/gitlab.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/ansible/playbook.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/ansible/playbook.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/ansible/vars/default.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/ansible/vars/default.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/terraform/stage/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/terraform/stage/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/terraform/stage/outputs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/terraform/stage/outputs.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/terraform/stage/terraform.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/terraform/stage/terraform.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/terraform/stage/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/terraform/stage/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reddit/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/reddit/Gemfile" afterDir="false" />
+    </list>
+    <list id="14f3bb92-c681-4bfc-a0ac-6a070acc66cc" name="local" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1wdtojBDWwpW50bKJfz5mCgpgzF" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TF_FMT" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gitlab-ci/ansible" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gitlab-ci/ansible" />
+      <recent name="$PROJECT_DIR$/gitlab-ci/terraform/stage" />
+      <recent name="$PROJECT_DIR$/kubernetes/helm/Charts" />
+      <recent name="$PROJECT_DIR$/kubernetes/reddit" />
+      <recent name="$PROJECT_DIR$/kubernetes/helm/Charts/ui/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kubernetes/helm/Charts/ui" />
+      <recent name="$PROJECT_DIR$/kubernetes/helm/Charts/tls" />
+      <recent name="$PROJECT_DIR$/kubernetes/reddit" />
+      <recent name="$PROJECT_DIR$/kubernetes/helm/Charts" />
+      <recent name="$PROJECT_DIR$/kubernetes/helm/Charts/temp" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2087335c-016a-4179-894e-7adfed03c487" name="Changes" comment="" />
+      <changelist id="14f3bb92-c681-4bfc-a0ac-6a070acc66cc" name="local" comment="" />
+      <created>1628800472299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628800472299</updated>
+      <workItem from="1628800476881" duration="687000" />
+      <workItem from="1628801181853" duration="564000" />
+      <workItem from="1628801761853" duration="3283000" />
+      <workItem from="1628953678152" duration="6730000" />
+      <workItem from="1629142368310" duration="8640000" />
+      <workItem from="1629313703477" duration="5246000" />
+      <workItem from="1633169834342" duration="10600000" />
+      <workItem from="1633461527162" duration="1076000" />
+      <workItem from="1633462629123" duration="15000" />
+      <workItem from="1633543728092" duration="6566000" />
+      <workItem from="1633631886438" duration="4000000" />
+      <workItem from="1633720389509" duration="2299000" />
+      <workItem from="1633796760160" duration="13748000" />
+      <workItem from="1633889076453" duration="7480000" />
+      <workItem from="1634481118676" duration="3590000" />
+      <workItem from="1634585421233" duration="1932000" />
+      <workItem from="1634666793598" duration="5625000" />
+      <workItem from="1634759185054" duration="2249000" />
+      <workItem from="1634838544435" duration="2271000" />
+      <workItem from="1634996730744" duration="744000" />
+      <workItem from="1634999256735" duration="6469000" />
+      <workItem from="1635276847435" duration="597000" />
+      <workItem from="1636038147900" duration="8362000" />
+      <workItem from="1636102741995" duration="11234000" />
+    </task>
+    <task id="LOCAL-00001" summary="homework ДЗ_Docker_образы._Микросервисы">
+      <created>1628962278860</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1628962278860</updated>
+    </task>
+    <task id="LOCAL-00002" summary="homework Docker:  сети, docker-compose">
+      <created>1629318838541</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629318838541</updated>
+    </task>
+    <task id="LOCAL-00003" summary="homework kubernetes:  Kubernetes. Запусккластера и приложения.Модель безопасности">
+      <created>1633633840136</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633633840136</updated>
+    </task>
+    <task id="LOCAL-00004" summary="homework kubernetes:  Kubernetes. Запусккластера и приложения.Модель безопасности">
+      <created>1633633868118</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1633633868118</updated>
+    </task>
+    <task id="LOCAL-00005" summary="homework kubernetes:  Kubernetes. Запуск кластера и приложения.Модель безопасности">
+      <created>1633634686708</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633634686708</updated>
+    </task>
+    <task id="LOCAL-00006" summary="homework kubernetes:  CI/CD в Kubernetes">
+      <created>1633889271325</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633889271325</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="homework ДЗ_Docker_образы._Микросервисы" />
+    <MESSAGE value="homework Docker:  сети, docker-compose" />
+    <MESSAGE value="homework kubernetes:  Kubernetes. Запусккластера и приложения.Модель безопасности" />
+    <MESSAGE value="homework kubernetes:  Kubernetes. Запуск кластера и приложения.Модель безопасности" />
+    <MESSAGE value="homework kubernetes:  CI/CD в Kubernetes" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework kubernetes:  CI/CD в Kubernetes" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

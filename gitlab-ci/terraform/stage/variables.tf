@@ -21,25 +21,21 @@ variable public_key_path {
 variable service_account_key_file {
   description = "key .json"
 }
-variable private_key_path {
-  description = "path to private key"
-}
-variable node_count {
-  description = "count node"
-  default     = 2
-}
 variable cores {
   description = "VM cores"
-  default     = 4
+  default     = 2
 }
 variable memory {
   description = "VM memory"
-  default     = 8
+  default     = 4
 }
 variable disk {
   description = "Disk size"
-  default     = 64
+  default     = 50
 }
 variable service_account_id {
   description = "Service account ID"
+}
+variable ssh_private_key_path {
+  description = "ssh private key path"
 }
