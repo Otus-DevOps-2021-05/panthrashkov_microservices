@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2087335c-016a-4179-894e-7adfed03c487" name="Changes" comment="homework kubernetes:  CI/CD в Kubernetes">
-      <change afterPath="$PROJECT_DIR$/gitlab-ci/img/img_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+    <list default="true" id="2087335c-016a-4179-894e-7adfed03c487" name="Changes" comment="homework gitlab:         Устройство Gitlab CI">
+      <change afterPath="$PROJECT_DIR$/monitoring/img/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring/terraform/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring/terraform/outputs.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring/terraform/terraform.tfvars.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring/terraform/variables.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitlab-ci/ansible/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitlab-ci/ansible/gitlab.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/ansible/gitlab.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gitlab-ci/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/terraform/stage/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/terraform/stage/terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitlab-ci/terraform/stage/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/terraform/stage/terraform.tfstate.backup" afterDir="false" />
     </list>
     <list id="14f3bb92-c681-4bfc-a0ac-6a070acc66cc" name="local" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="gitlab-ci-1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,40 +50,26 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gitlab-ci/ansible" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/monitoring" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/monitoring" />
       <recent name="$PROJECT_DIR$/gitlab-ci/ansible" />
       <recent name="$PROJECT_DIR$/gitlab-ci/terraform/stage" />
       <recent name="$PROJECT_DIR$/kubernetes/helm/Charts" />
       <recent name="$PROJECT_DIR$/kubernetes/reddit" />
-      <recent name="$PROJECT_DIR$/kubernetes/helm/Charts/ui/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/monitoring/terraform" />
       <recent name="$PROJECT_DIR$/gitlab-ci" />
       <recent name="$PROJECT_DIR$/kubernetes/helm/Charts/ui" />
       <recent name="$PROJECT_DIR$/kubernetes/helm/Charts/tls" />
       <recent name="$PROJECT_DIR$/kubernetes/reddit" />
-      <recent name="$PROJECT_DIR$/kubernetes/helm/Charts" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -113,7 +103,9 @@
       <workItem from="1634999256735" duration="6469000" />
       <workItem from="1635276847435" duration="597000" />
       <workItem from="1636038147900" duration="8362000" />
-      <workItem from="1636102741995" duration="12876000" />
+      <workItem from="1636102741995" duration="21791000" />
+      <workItem from="1636352114556" duration="294000" />
+      <workItem from="1636352470277" duration="3475000" />
     </task>
     <task id="LOCAL-00001" summary="homework ДЗ_Docker_образы._Микросервисы">
       <created>1628962278860</created>
@@ -164,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636114261730</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="homework gitlab:         Устройство Gitlab CI">
+      <created>1636120804073</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1636120804073</updated>
+    </task>
+    <task id="LOCAL-00009" summary="homework gitlab:  Устройство Gitlab CI">
+      <created>1636123696855</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1636123696855</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +195,9 @@
     <MESSAGE value="homework kubernetes:  Kubernetes. Запуск кластера и приложения.Модель безопасности" />
     <MESSAGE value="homework kubernetes:  CI/CD в Kubernetes" />
     <MESSAGE value="to run test" />
-    <option name="LAST_COMMIT_MESSAGE" value="to run test" />
+    <MESSAGE value="homework gitlab:         Устройство Gitlab CI" />
+    <MESSAGE value="homework gitlab:  Устройство Gitlab CI" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework gitlab:  Устройство Gitlab CI" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

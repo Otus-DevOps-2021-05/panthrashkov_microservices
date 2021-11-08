@@ -7,7 +7,7 @@ cd terraform/stage
 ```  
 2 copy ip from output and paste to ansible inventory and docker-compose.yml
 
-3. install docker, docker-compose and  gitlab using docker-compose
+3. install docker, docker-compose and  gitlab using ansible docker-compose
 ```bash
 cd ../../ansible
 ansible-playbook playbook.yml -l gitlab-ci -u ubuntu
