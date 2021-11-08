@@ -2,16 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2087335c-016a-4179-894e-7adfed03c487" name="Changes" comment="homework gitlab:         Устройство Gitlab CI">
-      <change afterPath="$PROJECT_DIR$/monitoring/img/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monitoring/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monitoring/terraform/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monitoring/terraform/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monitoring/terraform/terraform.tfvars.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monitoring/terraform/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitlab-ci/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitlab-ci/terraform/stage/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/terraform/stage/terraform.tfstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitlab-ci/terraform/stage/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/gitlab-ci/terraform/stage/terraform.tfstate.backup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring/img/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring/img/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring/img/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring/prometheus/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring/prometheus/prometheus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-monolith/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-monolith/db_config" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/db_config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-monolith/mongod.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/mongod.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-monolith/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/start.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockermonolith/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockermonolith/docker-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/docker-1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockermonolith/img/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/img/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockermonolith/img/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/img/img_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoring/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/docker/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
     </list>
     <list id="14f3bb92-c681-4bfc-a0ac-6a070acc66cc" name="local" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +53,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TF_FMT" value="false" />
@@ -64,11 +73,11 @@
       <recent name="$PROJECT_DIR$/kubernetes/reddit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/monitoring/terraform" />
-      <recent name="$PROJECT_DIR$/gitlab-ci" />
-      <recent name="$PROJECT_DIR$/kubernetes/helm/Charts/ui" />
-      <recent name="$PROJECT_DIR$/kubernetes/helm/Charts/tls" />
-      <recent name="$PROJECT_DIR$/kubernetes/reddit" />
+      <recent name="$PROJECT_DIR$/monitoring/img" />
+      <recent name="$PROJECT_DIR$/docker/docker-monolith" />
+      <recent name="$PROJECT_DIR$/monitoring" />
+      <recent name="$PROJECT_DIR$/docker" />
+      <recent name="$PROJECT_DIR$/docker-monolith" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
