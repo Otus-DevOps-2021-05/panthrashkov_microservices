@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2087335c-016a-4179-894e-7adfed03c487" name="Changes" comment="homework gitlab:         Устройство Gitlab CI">
-      <change afterPath="$PROJECT_DIR$/monitoring/img/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monitoring/img/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monitoring/img/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monitoring/prometheus/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monitoring/prometheus/prometheus.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-monolith/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-monolith/db_config" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/db_config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-monolith/mongod.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/mongod.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-monolith/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/start.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockermonolith/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockermonolith/docker-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/docker-1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockermonolith/img/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/img/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockermonolith/img/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-monolith/img/img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitoring/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/docker/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+    <list default="true" id="2087335c-016a-4179-894e-7adfed03c487" name="Changes" comment="homework monte">
+      <change afterPath="$PROJECT_DIR$/docker/docker-compose-logging.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging/fluentd/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging/fluentd/fluent.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging/img/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging/img/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging/img/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/docker/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/comment/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/comment/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/comment/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/comment/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/comment/comment_app.rb" beforeDir="false" afterPath="$PROJECT_DIR$/src/comment/comment_app.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/comment/docker_build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/comment/docker_build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/post-py/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/post-py/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/post-py/docker_build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/post-py/docker_build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/post-py/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/post-py/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/docker_build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/docker_build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ui_app.rb" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ui_app.rb" afterDir="false" />
     </list>
     <list id="14f3bb92-c681-4bfc-a0ac-6a070acc66cc" name="local" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="gitlab-ci-1" />
+        <entry key="$PROJECT_DIR$" value="monitoring-1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,23 +57,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/monitoring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker" />
+      <recent name="$PROJECT_DIR$/logging" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/monitoring" />
       <recent name="$PROJECT_DIR$/gitlab-ci/ansible" />
-      <recent name="$PROJECT_DIR$/gitlab-ci/terraform/stage" />
-      <recent name="$PROJECT_DIR$/kubernetes/helm/Charts" />
-      <recent name="$PROJECT_DIR$/kubernetes/reddit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/monitoring/img" />
@@ -115,6 +119,7 @@
       <workItem from="1636102741995" duration="21791000" />
       <workItem from="1636352114556" duration="294000" />
       <workItem from="1636352470277" duration="3475000" />
+      <workItem from="1636525486777" duration="12937000" />
     </task>
     <task id="LOCAL-00001" summary="homework ДЗ_Docker_образы._Микросервисы">
       <created>1628962278860</created>
@@ -179,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636123696855</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="homework monitoring">
+      <created>1636527444576</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1636527444576</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +218,8 @@
     <MESSAGE value="to run test" />
     <MESSAGE value="homework gitlab:         Устройство Gitlab CI" />
     <MESSAGE value="homework gitlab:  Устройство Gitlab CI" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework gitlab:  Устройство Gitlab CI" />
+    <MESSAGE value="homework monitoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework monitoring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
