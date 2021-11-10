@@ -1,0 +1,8 @@
+cloud_id                 = "b1go50poefqsqu09qeet"
+folder_id                = "b1gaeis0eu1b5lcjtuts"
+zone                     = "ru-central1-a"
+public_key_path          = "~/.ssh/appuser.pub"
+subnet_id                = "e9b94uuh3jgme9qok7vc"
+service_account_key_file = "/home/alex/IdeaProjects/infra-secret/key.json"
+ssh_private_key_path     = "~/.ssh/appuser"
+service_account_id       = "ajeopllar4kb5jkut4fb"

@@ -1,0 +1,273 @@
+Index: kubernetes/terraform/stage/terraform.tfvars
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/kubernetes/terraform/stage/terraform.tfvars b/kubernetes/terraform/stage/terraform.tfvars
+new file mode 100644
+--- /dev/null	
++++ b/kubernetes/terraform/stage/terraform.tfvars	
+@@ -0,0 +1,10 @@
++cloud_id                 = "b1go50poefqsqu09qeet"
++folder_id                = "b1gt52r3eo9fj66iu48k"
++zone                     = "ru-central1-a"
++image_id                 = "fd8r9l446hhejhf9hr0g"
++network_id               = "enp4edfk55bpnn87ncsa"
++public_key_path          = "~/.ssh/appuser.pub"
++subnet_id                = "e9bvn807jqvjlkm42t3q"
++service_account_key_file = "/home/alex/IdeaProjects/infra-secret/keyKubernetes.json"
++private_key_path         = "~/.ssh/appuser"
++service_account_id       = "ajelr47i9tja5fmdgaq6"
+Index: kubernetes/terraform/stage/terraform.tfstate.backup
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/kubernetes/terraform/stage/terraform.tfstate.backup b/kubernetes/terraform/stage/terraform.tfstate.backup
+new file mode 100644
+--- /dev/null	
++++ b/kubernetes/terraform/stage/terraform.tfstate.backup	
+@@ -0,0 +1,225 @@
++{
++  "version": 4,
++  "terraform_version": "0.12.8",
++  "serial": 83,
++  "lineage": "695341bd-2ed6-84e9-9431-226286bb2b5e",
++  "outputs": {
++    "cluster_external_v4_endpoint": {
++      "value": "https://62.84.114.3",
++      "type": "string"
++    }
++  },
++  "resources": [
++    {
++      "mode": "managed",
++      "type": "yandex_kubernetes_cluster",
++      "name": "k8s-stage",
++      "provider": "provider.yandex",
++      "instances": [
++        {
++          "schema_version": 0,
++          "attributes": {
++            "cluster_ipv4_range": "10.112.0.0/16",
++            "created_at": "2021-10-10T19:04:51Z",
++            "description": "",
++            "folder_id": "b1gt52r3eo9fj66iu48k",
++            "health": "healthy",
++            "id": "cathree76u0jfe0p2hma",
++            "labels": {},
++            "master": [
++              {
++                "cluster_ca_certificate": "-----BEGIN CERTIFICATE-----\nMIIC5zCCAc+gAwIBAgIBADANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwprdWJl\ncm5ldGVzMB4XDTIxMTAxMDE5MDQ1MloXDTMxMTAwODE5MDQ1MlowFTETMBEGA1UE\nAxMKa3ViZXJuZXRlczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANXD\nly2s2bIDvL0RTRazgGUL+3bOg3kzZrIiiCoZVJgiJGPVFImZis45+KEQex+5MzDk\np9hwrDV2HpYCUp2UH0QR1wuaisSEN7BF7xxOqXDDdRRsKm6Zg8W9FhAXuPxZskP7\nBsg2rtJ98B/95d/ij5d7/u0wF++fS5SRQQ/VdOUh+5Z+ADUs2Br8zg+SBX33Qf0E\nI22QPqODYFjzK8vXYuZzYIbsiQPWmEwIcbu5goAo0UMGdeGqNAlFM3xEgyaUepNL\nOV2AnxFalCBCWC0kNfNP7A5xFsrO8h6EHhrjt8QosOc7pTV3k9k/lK38rQE68kc7\nu4/OSF0GvaAjpPAefLECAwEAAaNCMEAwDgYDVR0PAQH/BAQDAgKkMA8GA1UdEwEB\n/wQFMAMBAf8wHQYDVR0OBBYEFFBXRfgZoNhYS7yDct3GX/Ao4x/ZMA0GCSqGSIb3\nDQEBCwUAA4IBAQCIqSockNGyuV93XKratrZASG68T7ITHyg1Ght0Ebse9SUWHuOr\nT3ZrM0+yjmj+Q+tgvOpUFQG3EeB2QFCjnquBF0jD0Kclm/l+88ytlLK0QCd/0yq8\nb+8IAZZPipUDxspwFGngIkKbDmBedzp8cflr4kMMLBBMlU6RVjt7cViGH+N1S3Do\nlSUNAZlZCsu+WIOKMG0GaP1wiAFj5oJIz7S3gbupa6D70jcPixMGJjF8V/E4Q0u4\n0pzz1nAwnWF4HWaBQ+ZngitCSnKro4QTCjiKNIGbHTSlXU6cF8NGqvEpgBu7OKRq\n2hOeJm40dmX6Wn0SZR7dlMo2UQIA3CPM1vL4\n-----END CERTIFICATE-----\n",
++                "external_v4_address": "62.84.114.3",
++                "external_v4_endpoint": "https://62.84.114.3",
++                "internal_v4_address": "192.168.10.6",
++                "internal_v4_endpoint": "https://192.168.10.6",
++                "maintenance_policy": [
++                  {
++                    "auto_upgrade": true,
++                    "maintenance_window": []
++                  }
++                ],
++                "public_ip": true,
++                "regional": [],
++                "version": "1.19",
++                "version_info": [
++                  {
++                    "current_version": "1.19",
++                    "new_revision_available": false,
++                    "new_revision_summary": "",
++                    "version_deprecated": false
++                  }
++                ],
++                "zonal": [
++                  {
++                    "subnet_id": "e9bvla9mob14fmmda1qm",
++                    "zone": "ru-central1-a"
++                  }
++                ]
++              }
++            ],
++            "name": "k8s-stage",
++            "network_id": "enpdoc5dog6vrplbb6vt",
++            "network_policy_provider": "CALICO",
++            "node_service_account_id": "ajelr47i9tja5fmdgaq6",
++            "release_channel": "RAPID",
++            "service_account_id": "ajelr47i9tja5fmdgaq6",
++            "service_ipv4_range": "10.96.0.0/16",
++            "status": "running",
++            "timeouts": null
++          },
++          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
++          "depends_on": [
++            "yandex_vpc_network.app-network",
++            "yandex_vpc_subnet.app-subnet"
++          ]
++        }
++      ]
++    },
++    {
++      "mode": "managed",
++      "type": "yandex_kubernetes_node_group",
++      "name": "k8s-node",
++      "provider": "provider.yandex",
++      "instances": [
++        {
++          "schema_version": 0,
++          "attributes": {
++            "allocation_policy": [
++              {
++                "location": [
++                  {
++                    "subnet_id": "e9bvla9mob14fmmda1qm",
++                    "zone": "ru-central1-a"
++                  }
++                ]
++              }
++            ],
++            "allowed_unsafe_sysctls": null,
++            "cluster_id": "cathree76u0jfe0p2hma",
++            "created_at": "2021-10-10T19:10:57Z",
++            "description": "",
++            "id": "catf8d2qsut1q46bhq31",
++            "instance_group_id": "cl1spna6rd1ues9cnjno",
++            "instance_template": [
++              {
++                "boot_disk": [
++                  {
++                    "size": 64,
++                    "type": "network-ssd"
++                  }
++                ],
++                "metadata": {
++                  "ssh-keys": "ubuntu:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDlQWg2xdp6N4iPvYH6JO2qgYXE8ZWtDyZOjFSKA3rPvAFcaJkR+hcxBCXrGgEoz23YkeWOJqio2HG98FTwK7ff3rqa0/dA6ma4hBjsOGTT13H2wX2Q9S2d8jx4aa/UpZibc2Y5vjswk7KUtdt5OjVvoEywjZILk4FTvm9Ay3MnVuXy4AtGEtA2ebjJl8gSxNlq2AHlkR3WuzHP28+oebpjCbTNPYh90iOc7DHHG9OwyPWZGAMlK8461WC1CiUodQgvatcGyLGEZg1FXEL53hitoYXyUpjqqSRlr6XVzGEcleFxYJ9RVEd+yJR5K6FSpn6Wyvo6sNS7Z+cXxJ5cSZxqXNWlr0jXaJ9z/Jj9HEWdtC5wBS1hSL2eKRJ0cEz0ZtH6+k6ecJQUmBQGSyG0MFc+E0yt+1HACVCrjFjSyLXlCzN3oOZ+JBp3pqdHiJUjTYsaBNqGa7g1blCkoALAAM76Ud61m0Cr0BxhPxT27WaInNRGi3hIoxnc8pbGBD7gaD8= appuser\n"
++                },
++                "nat": true,
++                "platform_id": "standard-v2",
++                "resources": [
++                  {
++                    "core_fraction": 100,
++                    "cores": 4,
++                    "memory": 8
++                  }
++                ],
++                "scheduling_policy": [
++                  {
++                    "preemptible": false
++                  }
++                ]
++              }
++            ],
++            "labels": {},
++            "maintenance_policy": [
++              {
++                "auto_repair": true,
++                "auto_upgrade": true,
++                "maintenance_window": []
++              }
++            ],
++            "name": "k8s-node",
++            "node_labels": null,
++            "node_taints": null,
++            "scale_policy": [
++              {
++                "auto_scale": [],
++                "fixed_scale": [
++                  {
++                    "size": 2
++                  }
++                ]
++              }
++            ],
++            "status": "running",
++            "timeouts": null,
++            "version": "1.19",
++            "version_info": [
++              {
++                "current_version": "1.19",
++                "new_revision_available": false,
++                "new_revision_summary": "",
++                "version_deprecated": false
++              }
++            ]
++          },
++          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfX0=",
++          "depends_on": [
++            "yandex_kubernetes_cluster.k8s-stage"
++          ]
++        }
++      ]
++    },
++    {
++      "mode": "managed",
++      "type": "yandex_vpc_network",
++      "name": "app-network",
++      "provider": "provider.yandex",
++      "instances": [
++        {
++          "schema_version": 0,
++          "attributes": {
++            "created_at": "2021-10-10T19:04:49Z",
++            "description": "",
++            "folder_id": "b1gt52r3eo9fj66iu48k",
++            "id": "enpdoc5dog6vrplbb6vt",
++            "labels": null,
++            "name": "kubernetes-network",
++            "subnet_ids": [],
++            "timeouts": null
++          },
++          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMCwiZGVsZXRlIjo2MDAwMDAwMDAwMCwidXBkYXRlIjo2MDAwMDAwMDAwMH19"
++        }
++      ]
++    },
++    {
++      "mode": "managed",
++      "type": "yandex_vpc_subnet",
++      "name": "app-subnet",
++      "provider": "provider.yandex",
++      "instances": [
++        {
++          "schema_version": 0,
++          "attributes": {
++            "created_at": "2021-10-10T19:04:50Z",
++            "description": "",
++            "folder_id": "b1gt52r3eo9fj66iu48k",
++            "id": "e9bvla9mob14fmmda1qm",
++            "labels": null,
++            "name": "kubernetes-subnet",
++            "network_id": "enpdoc5dog6vrplbb6vt",
++            "route_table_id": "",
++            "timeouts": null,
++            "v4_cidr_blocks": [
++              "192.168.10.0/28"
++            ],
++            "v6_cidr_blocks": [],
++            "zone": "ru-central1-a"
++          },
++          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAsImRlbGV0ZSI6MTgwMDAwMDAwMDAwLCJ1cGRhdGUiOjE4MDAwMDAwMDAwMH19",
++          "depends_on": [
++            "yandex_vpc_network.app-network"
++          ]
++        }
++      ]
++    }
++  ]
++}
+Index: kubernetes/terraform/stage/terraform.tfstate
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/kubernetes/terraform/stage/terraform.tfstate b/kubernetes/terraform/stage/terraform.tfstate
+new file mode 100644
+--- /dev/null	
++++ b/kubernetes/terraform/stage/terraform.tfstate	
+@@ -0,0 +1,8 @@
++{
++  "version": 4,
++  "terraform_version": "0.12.8",
++  "serial": 88,
++  "lineage": "695341bd-2ed6-84e9-9431-226286bb2b5e",
++  "outputs": {},
++  "resources": []
++}
