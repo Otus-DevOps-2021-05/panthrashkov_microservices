@@ -7,7 +7,7 @@ services:
     networks:
       - back_net
   ui:
-    image: ${USERNAME}/ui:${UI_VERSION}
+    image: ${USER_NAME}/ui:${UI_VERSION}
     ports:
       - ${UI_PORT}:${UI_PORT}/tcp
     logging:
@@ -38,7 +38,7 @@ services:
       - front_net
       - back_net
   comment:
-    image: ${USERNAME}/comment:${COMMENT_VERSION}
+    image: ${USER_NAME}/comment:${COMMENT_VERSION}
     environment:
       - ZIPKIN_ENABLED=${ZIPKIN_ENABLED}
     networks:
@@ -46,7 +46,7 @@ services:
       - back_net
 
   prometheus:
-    image: ${USERNAME}/prometheus
+    image: ${USER_NAME}/prometheus
     ports:
       - '9090:9090'
     volumes:
