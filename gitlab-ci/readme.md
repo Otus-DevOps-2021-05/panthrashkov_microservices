@@ -5,30 +5,13 @@ cd terraform/stage
    terraform plan 
    terraform apply --auto-approve
 ```  
-2 copy ip from output
-and paste to ansible inventory
+2 copy ip from output and paste to ansible inventory and docker-compose.yml
 
-2. install docker
+3. install docker, docker-compose and  gitlab using ansible docker-compose
 ```bash
 cd ../../ansible
 ansible-playbook playbook.yml -l gitlab-ci -u ubuntu
 ```   
-3. connect to vm
-```bash
-ssh ubuntu@51.250.0.71
-``` 
-4. create directories connect to vm
-```bash
-ansible gitlab-ci -m shell -a 'mkdir -p /srv/gitlab/config /srv/gitlab/data /srv/gitlab/logs' -b
-``` 
-5. paste ip to docker-compose and copy it to server
-```bash
-ansible-playbook gitlab.yml -l gitlab-ci -u ubuntu
-``` 
-6. run docker-compose
-```bash
-ansible gitlab-ci -m shell -a 'cd /srv/gitlab/ \ docker-compose up -d' -b
-``` 
 ![img.png](img/img.png)
 7. get gitlab root password
 sudo docker exec -it 042c541924a9 grep 'Password:' /etc/gitlab/initial_root_password
